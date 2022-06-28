@@ -1,0 +1,41 @@
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *      Client:
+ *          type: object
+ *          properties: 
+ *              first_name: 
+ *                  type: string
+ *                  description: El nombre
+ *              last_name: 
+ *                  type: string
+ *                  description: Apellido
+ *              age: 
+ *                  type: integer
+ *                  description: Edad
+ *              birthday: 
+ *                  type: string
+ *                  description: Fecha de nacimiento
+ *          required:
+ *              - first_name
+ *              - last_name
+ *              - age
+ *              - birthday
+ *          example:
+ *              first_name: Carlo
+ *	            last_name: Munoz
+ *	            age: "43"
+ *	            birthday: 1985-12-21
+ */
+
+ /**
+ * @swagger
+ * description: response
+ *  content:
+ *      application/json:
+ *          schema:
+ *              type: Array
+ *              items:
+ *                  $ref: '#/complex'
+ */
