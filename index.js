@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-const port = 3000 || process.env.PORT;
+const port = 3000;
 
 const path = require('path');
 // swagger
