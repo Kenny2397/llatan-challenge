@@ -1,8 +1,10 @@
 const express = require('express');
+const cors = require("cors");
 
+dotenv.config();
 const app = express();
 
-const port = 3000;
+const port = process.env.PORT || 8000;
 
 const path = require('path');
 // swagger
@@ -28,6 +30,7 @@ const swaggerSpec = {
 
 // middlewares
 app.use(express.json());
+app.use(cors());
 app.use(
     '/api-doc',
     swaggerUi.serve,
